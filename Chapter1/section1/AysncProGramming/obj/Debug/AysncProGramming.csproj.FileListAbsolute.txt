@@ -1,0 +1,6 @@
+/Users/yue.wang/GameProgramming/Chapter1/section1/AysncProGramming/bin/Debug/AysncProGramming.exe
+/Users/yue.wang/GameProgramming/Chapter1/section1/AysncProGramming/bin/Debug/AysncProGramming.pdb
+/Users/yue.wang/GameProgramming/Chapter1/section1/AysncProGramming/obj/Debug/AysncProGramming.csprojAssemblyReference.cache
+/Users/yue.wang/GameProgramming/Chapter1/section1/AysncProGramming/obj/Debug/AysncProGramming.csproj.CoreCompileInputs.cache
+/Users/yue.wang/GameProgramming/Chapter1/section1/AysncProGramming/obj/Debug/AysncProGramming.exe
+/Users/yue.wang/GameProgramming/Chapter1/section1/AysncProGramming/obj/Debug/AysncProGramming.pdb
