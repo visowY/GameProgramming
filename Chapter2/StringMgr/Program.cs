@@ -9,7 +9,8 @@ namespace StringMgr
         public static void Main(string[] args)
         {
 //            Test1();
-            Test2();
+//            Test2();
+              Test3();
         }
 
         #region 匹配
@@ -102,9 +103,69 @@ namespace StringMgr
             //提取所有的邮箱地址
             
             
+            //C:\windows\testb.txt 
+            //提取文件名
+
+//            string input = @"C:\windows\testb.txt";
+//
+//            var match = Regex.Match(input, @"[a-zA-Z]+\.[a-zA-Z]+");
+//            
+//            Console.WriteLine(match.Value);
+            
+            //使用提取组实现
+
             //提取组， 对已经提取的数字实现分组功能
+            
+            //贪婪模式
+            
+            
+            
+
+
+
         }
 
         #endregion
+        
+        #region 正则替换
+
+        public static void Test3()
+        {
+//            string msg = "你好aaaa好aaa，哈哈a，好aa";
+
+//            msg = Regex.Replace(msg, @"a+", "A");
+//            Console.WriteLine(msg);
+    
+              //在正则替换中使用提取组  
+//            string msg2 = "hello 'welcome' to 'china'";
+//            msg2 = Regex.Replace(msg2, @"'(.+?)'", "[$1]");
+//            Console.WriteLine(msg2);
+            
+              //
+//              string msg3 = "我的生日是05/21/2010耶";
+//              msg3 = Regex.Replace(msg3, @"(\d+)/(\d+)/(\d+)", "$3-$1-$2");
+//              Console.WriteLine(msg3);
+            
+            //隐藏手机号码
+//            string msg4 = "仰仗123456789 马戏120987766";
+//            msg4 = Regex.Replace(msg4, @"(\d{3})\d{3}(\d+)", "$1***$2");
+//            Console.WriteLine(msg4);
+
+            //邮箱*号替换
+//            string msg5 = "我的邮箱 643493305@qq.com";
+//            msg5 = Regex.Replace(msg5, @"(\w+)(@\w+.com)", () =>return "$2";
+//            }, RegexOptions.ECMAScript);
+
+            //单词边界
+            
+            //反向引用=
+
+            string msg6 = "AAAABBBBBBBCCCCCCC";
+            msg6 = Regex.Replace(msg6, @"(.)\1+", "$1");  // \1 标示引用分组
+            Console.WriteLine(msg6);
+
+        }
+
+        #endregion 
     }
 }
