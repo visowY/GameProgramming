@@ -1,0 +1,6 @@
+/Users/yue.wang/GameProgramming/Chapter2/StringMgr/bin/Debug/StringMgr.exe
+/Users/yue.wang/GameProgramming/Chapter2/StringMgr/bin/Debug/StringMgr.pdb
+/Users/yue.wang/GameProgramming/Chapter2/StringMgr/obj/Debug/StringMgr.csprojAssemblyReference.cache
+/Users/yue.wang/GameProgramming/Chapter2/StringMgr/obj/Debug/StringMgr.csproj.CoreCompileInputs.cache
+/Users/yue.wang/GameProgramming/Chapter2/StringMgr/obj/Debug/StringMgr.exe
+/Users/yue.wang/GameProgramming/Chapter2/StringMgr/obj/Debug/StringMgr.pdb

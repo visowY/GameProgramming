@@ -12,6 +12,8 @@
       <e p="StringMgr.csproj" t="IncludeRecursive" />
       <e p="StringMgr.sln" t="IncludeFlat" />
       <e p="Test_01.cs" t="Include" />
+      <e p="Test_02.cs" t="Include" />
+      <e p="Test_03.cs" t="Include" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_StringMgr.762179656.00" t="ExcludeRecursive" />
