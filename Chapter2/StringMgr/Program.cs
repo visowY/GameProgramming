@@ -159,10 +159,24 @@ namespace StringMgr
             //单词边界
             
             //反向引用=
-
-            string msg6 = "AAAABBBBBBBCCCCCCC";
-            msg6 = Regex.Replace(msg6, @"(.)\1+", "$1");  // \1 标示引用分组
-            Console.WriteLine(msg6);
+//            string msg6 = "AAAABBBBBBBCCCCCCC";
+//            msg6 = Regex.Replace(msg6, @"(.)\1+", "$1");  // \1 标示引用分组
+//            Console.WriteLine(msg6);
+            
+            //反向引用2
+            
+            // 提取单词
+            
+            //ubb翻译：
+            
+            //敏感词过滤
+            
+            
+            //提取职位信息
+            
+            
+            
+            
 
         }
 

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cf76b35-1b12-4aa1-adf1-5af49c3bbc00" name="Default Changelist" comment="" />
+    <list default="true" id="7cf76b35-1b12-4aa1-adf1-5af49c3bbc00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StringMgr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StringMgr/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,28 +16,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="163" column="69" selection-start-line="163" selection-start-column="69" selection-end-line="163" selection-end-column="69" />
+            <state relative-caret-position="385">
+              <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
               <folding>
-                <marker date="1611751812103" expanded="true" signature="6:77" ph="..." />
-                <marker date="1611751812103" expanded="true" signature="98:4222" ph="{...}" />
-                <marker date="1611751812103" expanded="true" signature="127:4220" ph="{...}" />
-                <marker date="1611751812103" expanded="true" signature="180:269" ph="{...}" />
-                <marker date="1611751812103" expanded="true" signature="191:236" ph="/* Test1(); ... */" />
-                <marker date="1611751812103" expanded="false" signature="279:2054" ph="匹配" />
-                <marker date="1611751812103" expanded="true" signature="339:1582" ph="{...}" />
-                <marker date="1611751812103" expanded="true" signature="362:955" ph="/* 注意完全匹配 &amp; 部分匹配的区别 ... */" />
-                <marker date="1611751812103" expanded="true" signature="968:1029" ph="/* xxx @ .com   //  xx @ .cn ... */" />
-                <marker date="1611751812103" expanded="true" signature="1030:1572" ph="/* while (true) ... */" />
-                <marker date="1611751812103" expanded="true" signature="1639:2034" ph="{...}" />
-                <marker date="1611751812103" expanded="true" signature="1674:2024" ph="{...}" />
-                <marker date="1611751812103" expanded="false" signature="2064:2963" ph="字符串提取" />
-                <marker date="1611751812103" expanded="true" signature="2113:2943" ph="{...}" />
-                <marker date="1611751812103" expanded="true" signature="2124:2517" ph="/* string s = &quot;大叫好啊，hello， 2021年 1月 12日 是个好热字 啊， 9090，8888&quot;; ... */" />
-                <marker date="1611751812103" expanded="true" signature="2556:2891" ph="/* C:\windows\testb.txt ... */" />
-                <marker date="1611751812103" expanded="true" signature="2981:4213" ph="正则替换" />
-                <marker date="1611751812103" expanded="true" signature="3029:4193" ph="{...}" />
-                <marker date="1611751812103" expanded="true" signature="3040:4025" ph="/* string msg = &quot;你好aaaa好aaa，哈哈a，好aa&quot;; ... */" />
+                <marker date="1611826658148" expanded="true" signature="6:77" ph="..." />
+                <marker date="1611826658148" expanded="true" signature="98:4459" ph="{...}" />
+                <marker date="1611826658148" expanded="true" signature="127:4457" ph="{...}" />
+                <marker date="1611826658148" expanded="true" signature="180:269" ph="{...}" />
+                <marker date="1611826658148" expanded="true" signature="191:236" ph="/* Test1(); ... */" />
+                <marker date="1611826658148" expanded="false" signature="279:2054" ph="匹配" />
+                <marker date="1611826658148" expanded="true" signature="339:1582" ph="{...}" />
+                <marker date="1611826658148" expanded="true" signature="362:955" ph="/* 注意完全匹配 &amp; 部分匹配的区别 ... */" />
+                <marker date="1611826658148" expanded="true" signature="968:1029" ph="/* xxx @ .com   //  xx @ .cn ... */" />
+                <marker date="1611826658148" expanded="true" signature="1030:1572" ph="/* while (true) ... */" />
+                <marker date="1611826658148" expanded="true" signature="1639:2034" ph="{...}" />
+                <marker date="1611826658148" expanded="true" signature="1674:2024" ph="{...}" />
+                <marker date="1611826658148" expanded="false" signature="2064:2963" ph="字符串提取" />
+                <marker date="1611826658148" expanded="true" signature="2113:2943" ph="{...}" />
+                <marker date="1611826658148" expanded="true" signature="2124:2517" ph="/* string s = &quot;大叫好啊，hello， 2021年 1月 12日 是个好热字 啊， 9090，8888&quot;; ... */" />
+                <marker date="1611826658148" expanded="true" signature="2556:2891" ph="/* C:\windows\testb.txt ... */" />
+                <marker date="1611826658148" expanded="true" signature="2981:4450" ph="正则替换" />
+                <marker date="1611826658148" expanded="true" signature="3029:4430" ph="{...}" />
+                <marker date="1611826658148" expanded="true" signature="3040:4320" ph="/* string msg = &quot;你好aaaa好aaa，哈哈a，好aa&quot;; ... */" />
               </folding>
             </state>
           </provider>
@@ -43,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_01.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="135">
               <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
               <folding>
                 <marker date="1611646002826" expanded="true" signature="34:374" ph="{...}" />
@@ -85,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Properties/AssemblyInfo.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="105">
               <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <marker date="1611645384185" expanded="true" signature="6:62" ph="..." />
@@ -128,8 +131,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="212" />
-    <option name="y" value="-788" />
+    <option name="x" value="66" />
+    <option name="y" value="103" />
     <option name="width" value="1255" />
     <option name="height" value="716" />
   </component>
@@ -137,16 +140,10 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -199,11 +196,12 @@
       <updated>1611645387763</updated>
       <workItem from="1611645390904" duration="12884000" />
       <workItem from="1611734822657" duration="9502000" />
+      <workItem from="1611823170736" duration="2851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22386000" />
+    <option name="totallyTimeSpent" value="25237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -215,7 +213,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="212" y="-788" width="1255" height="716" extended-state="0" />
+    <frame x="66" y="103" width="1255" height="716" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2539159" />
@@ -262,35 +260,35 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="163" column="69" selection-start-line="163" selection-start-column="69" selection-end-line="163" selection-end-column="69" />
+        <state relative-caret-position="385">
+          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
           <folding>
-            <marker date="1611751812103" expanded="true" signature="6:77" ph="..." />
-            <marker date="1611751812103" expanded="true" signature="98:4222" ph="{...}" />
-            <marker date="1611751812103" expanded="true" signature="127:4220" ph="{...}" />
-            <marker date="1611751812103" expanded="true" signature="180:269" ph="{...}" />
-            <marker date="1611751812103" expanded="true" signature="191:236" ph="/* Test1(); ... */" />
-            <marker date="1611751812103" expanded="false" signature="279:2054" ph="匹配" />
-            <marker date="1611751812103" expanded="true" signature="339:1582" ph="{...}" />
-            <marker date="1611751812103" expanded="true" signature="362:955" ph="/* 注意完全匹配 &amp; 部分匹配的区别 ... */" />
-            <marker date="1611751812103" expanded="true" signature="968:1029" ph="/* xxx @ .com   //  xx @ .cn ... */" />
-            <marker date="1611751812103" expanded="true" signature="1030:1572" ph="/* while (true) ... */" />
-            <marker date="1611751812103" expanded="true" signature="1639:2034" ph="{...}" />
-            <marker date="1611751812103" expanded="true" signature="1674:2024" ph="{...}" />
-            <marker date="1611751812103" expanded="false" signature="2064:2963" ph="字符串提取" />
-            <marker date="1611751812103" expanded="true" signature="2113:2943" ph="{...}" />
-            <marker date="1611751812103" expanded="true" signature="2124:2517" ph="/* string s = &quot;大叫好啊，hello， 2021年 1月 12日 是个好热字 啊， 9090，8888&quot;; ... */" />
-            <marker date="1611751812103" expanded="true" signature="2556:2891" ph="/* C:\windows\testb.txt ... */" />
-            <marker date="1611751812103" expanded="true" signature="2981:4213" ph="正则替换" />
-            <marker date="1611751812103" expanded="true" signature="3029:4193" ph="{...}" />
-            <marker date="1611751812103" expanded="true" signature="3040:4025" ph="/* string msg = &quot;你好aaaa好aaa，哈哈a，好aa&quot;; ... */" />
+            <marker date="1611826658148" expanded="true" signature="6:77" ph="..." />
+            <marker date="1611826658148" expanded="true" signature="98:4459" ph="{...}" />
+            <marker date="1611826658148" expanded="true" signature="127:4457" ph="{...}" />
+            <marker date="1611826658148" expanded="true" signature="180:269" ph="{...}" />
+            <marker date="1611826658148" expanded="true" signature="191:236" ph="/* Test1(); ... */" />
+            <marker date="1611826658148" expanded="false" signature="279:2054" ph="匹配" />
+            <marker date="1611826658148" expanded="true" signature="339:1582" ph="{...}" />
+            <marker date="1611826658148" expanded="true" signature="362:955" ph="/* 注意完全匹配 &amp; 部分匹配的区别 ... */" />
+            <marker date="1611826658148" expanded="true" signature="968:1029" ph="/* xxx @ .com   //  xx @ .cn ... */" />
+            <marker date="1611826658148" expanded="true" signature="1030:1572" ph="/* while (true) ... */" />
+            <marker date="1611826658148" expanded="true" signature="1639:2034" ph="{...}" />
+            <marker date="1611826658148" expanded="true" signature="1674:2024" ph="{...}" />
+            <marker date="1611826658148" expanded="false" signature="2064:2963" ph="字符串提取" />
+            <marker date="1611826658148" expanded="true" signature="2113:2943" ph="{...}" />
+            <marker date="1611826658148" expanded="true" signature="2124:2517" ph="/* string s = &quot;大叫好啊，hello， 2021年 1月 12日 是个好热字 啊， 9090，8888&quot;; ... */" />
+            <marker date="1611826658148" expanded="true" signature="2556:2891" ph="/* C:\windows\testb.txt ... */" />
+            <marker date="1611826658148" expanded="true" signature="2981:4450" ph="正则替换" />
+            <marker date="1611826658148" expanded="true" signature="3029:4430" ph="{...}" />
+            <marker date="1611826658148" expanded="true" signature="3040:4320" ph="/* string msg = &quot;你好aaaa好aaa，哈哈a，好aa&quot;; ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_01.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="135">
           <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding>
             <marker date="1611646002826" expanded="true" signature="34:374" ph="{...}" />
@@ -326,7 +324,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Properties/AssemblyInfo.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="105">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="37" />
           <folding>
             <marker date="1611645384185" expanded="true" signature="6:62" ph="..." />
