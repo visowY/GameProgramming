@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="AopTest.cs" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="D_DesignPattern.csproj" t="IncludeRecursive" />
+      <e p="D_DesignPattern.sln" t="IncludeFlat" />
+      <e p="Decorator.cs" t="Include" />
+      <e p="EmitTest.cs" t="Include" />
+      <e p="Example" t="Include">
+        <e p="ProxyExample.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="Proxy.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_D_DesignPattern.1796917466.00" t="ExcludeRecursive" />
+  </component>
+</project>

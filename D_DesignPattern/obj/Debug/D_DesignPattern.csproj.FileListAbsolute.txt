@@ -1,0 +1,6 @@
+/Users/yue.wang/GameProgramming/D_DesignPattern/bin/Debug/D_DesignPattern.exe
+/Users/yue.wang/GameProgramming/D_DesignPattern/bin/Debug/D_DesignPattern.pdb
+/Users/yue.wang/GameProgramming/D_DesignPattern/obj/Debug/D_DesignPattern.csprojAssemblyReference.cache
+/Users/yue.wang/GameProgramming/D_DesignPattern/obj/Debug/D_DesignPattern.csproj.CoreCompileInputs.cache
+/Users/yue.wang/GameProgramming/D_DesignPattern/obj/Debug/D_DesignPattern.exe
+/Users/yue.wang/GameProgramming/D_DesignPattern/obj/Debug/D_DesignPattern.pdb
