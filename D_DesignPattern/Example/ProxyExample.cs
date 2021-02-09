@@ -4,9 +4,12 @@ namespace D_DesignPattern.Example
 {
     public class ProxyExample
     {
-        var _target =  new Proxy();
-        
-        
+        public static void DoMain()
+        {
+            var target = new Proxy();
+            target.DoMain();
+        }
+
     }
 
 

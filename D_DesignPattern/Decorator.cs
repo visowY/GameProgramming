@@ -7,14 +7,6 @@ namespace D_DesignPattern
      *     ConcreteComponent:
      *     Decorator:
      *     ConcreteDecorator: 
-     *     
-     *
-     *
-     *
-     *
-     *
-     *
-     * 
      */
 
     public abstract class Component
@@ -33,7 +25,6 @@ namespace D_DesignPattern
     public class Decorator:Component
     {
         protected Component _component;
-
         public void SetComponent(Component component)
         {
             _component = component;
@@ -62,6 +53,4 @@ namespace D_DesignPattern
             Console.WriteLine("this is ConcreteDecoratorB!");
         }
     }
-
-
 }

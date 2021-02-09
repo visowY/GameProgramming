@@ -1,4 +1,5 @@
 ﻿using System;
+using D_DesignPattern.Example;
 
 namespace D_DesignPattern
 {
@@ -25,12 +26,16 @@ namespace D_DesignPattern
 //                cb.Print();            
 //            #endregion 
 
-            #region Emit的调用
-            
+//            #region Emit的调用
+//            
+//
+//            TypeCreator tp = new TypeCreator();
+//            tp.Do();
+//            #endregion
 
-            TypeCreator tp = new TypeCreator();
-            tp.Do();
-            #endregion
+
+             ProxyExample.DoMain();
+            
         }
     }
 }

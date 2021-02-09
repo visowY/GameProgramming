@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53273d0-2f00-4f28-9b7c-c30d2d7dcd09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AopTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmitTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proxy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChainResponsibility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Composite.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D_DesignPattern.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/D_DesignPattern.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Decorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/ProxyExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Example/ProxyExample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,83 +27,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            <state relative-caret-position="319">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="38" />
               <folding>
-                <marker date="1612513615973" expanded="true" signature="40:962" ph="{...}" />
-                <marker date="1612513615973" expanded="true" signature="69:960" ph="{...}" />
-                <marker date="1612513615973" expanded="true" signature="122:954" ph="{...}" />
-                <marker date="1612513615973" expanded="true" signature="133:809" ph="/* ##region Proxy 代理模式 ... */" />
-                <marker date="1612513615973" expanded="true" signature="823:944" ph="Emit的调用" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EmitTest.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-              <folding>
-                <marker date="1612513787842" expanded="true" signature="6:86" ph="..." />
-                <marker date="1612513787842" expanded="true" signature="113:1396" ph="{...}" />
-                <marker date="1612513787842" expanded="true" signature="144:1394" ph="{...}" />
-                <marker date="1612513787842" expanded="true" signature="176:1374" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AopTest.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-              <folding>
-                <marker date="1612515736146" expanded="true" signature="40:67" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Decorator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="61" column="60" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
-              <folding>
-                <marker date="1612495350864" expanded="true" signature="40:1210" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="47:237" ph="/* 装饰器模式(组合优于继承) ... */" />
-                <marker date="1612495350864" expanded="true" signature="274:324" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="372:502" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="415:496" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="540:794" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="641:697" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="735:788" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="843:1000" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="886:994" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="1049:1206" ph="{...}" />
-                <marker date="1612495350864" expanded="true" signature="1092:1200" ph="{...}" />
+                <marker date="1612680793672" expanded="true" signature="6:44" ph="..." />
+                <marker date="1612680793672" expanded="true" signature="71:1056" ph="{...}" />
+                <marker date="1612680793672" expanded="true" signature="100:1054" ph="{...}" />
+                <marker date="1612680793672" expanded="true" signature="153:1048" ph="{...}" />
+                <marker date="1612680793672" expanded="true" signature="164:987" ph="/* ##region Proxy 代理模式 ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Example/ProxyExample.cs">
+        <entry file="file://$PROJECT_DIR$/Composite.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="290">
+              <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
               <folding>
-                <marker date="1612665478318" expanded="true" signature="48:693" ph="{...}" />
-                <marker date="1612665478318" expanded="true" signature="80:146" ph="{...}" />
-                <marker date="1612665478318" expanded="true" signature="189:240" ph="{...}" />
-                <marker date="1612665478318" expanded="true" signature="280:402" ph="{...}" />
-                <marker date="1612665478318" expanded="true" signature="324:396" ph="{...}" />
-                <marker date="1612665478318" expanded="true" signature="439:691" ph="{...}" />
-                <marker date="1612665478318" expanded="true" signature="468:558" ph="{...}" />
-                <marker date="1612665478318" expanded="true" signature="634:685" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="6:39" ph="..." />
+                <marker date="1612775130211" expanded="true" signature="66:1328" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="95:116" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="152:318" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="228:274" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="357:656" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="477:497" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="534:567" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="605:650" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="690:874" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="742:762" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="799:868" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="910:1096" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="964:984" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="1021:1090" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="1136:1326" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="1194:1214" ph="{...}" />
+                <marker date="1612775130211" expanded="true" signature="1251:1320" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -106,23 +75,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Composite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AopTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Proxy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Decorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Example/ProxyExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChainResponsibility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EmitTest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Proxy.cs" />
-        <option value="$PROJECT_DIR$/Decorator.cs" />
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/EmitTest.cs" />
         <option value="$PROJECT_DIR$/AopTest.cs" />
         <option value="$PROJECT_DIR$/Example/ProyxExample.cs" />
         <option value="$PROJECT_DIR$/Example/ProxyExample.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Decorator.cs" />
+        <option value="$PROJECT_DIR$/ChainResponsibility.cs" />
+        <option value="$PROJECT_DIR$/Composite.cs" />
       </list>
     </option>
   </component>
@@ -135,8 +108,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="73" />
-    <option name="y" value="-944" />
+    <option name="x" value="26" />
+    <option name="y" value="45" />
     <option name="width" value="1403" />
     <option name="height" value="781" />
   </component>
@@ -148,11 +121,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="D_DesignPattern" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="D_DesignPattern" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="D_DesignPattern" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,11 +197,17 @@
       <workItem from="1612515589140" duration="528000" />
       <workItem from="1612518591054" duration="1610000" />
       <workItem from="1612665399956" duration="105000" />
+      <workItem from="1612680658591" duration="247000" />
+      <workItem from="1612752214270" duration="1118000" />
+      <workItem from="1612753746084" duration="690000" />
+      <workItem from="1612763885875" duration="851000" />
+      <workItem from="1612770502611" duration="274000" />
+      <workItem from="1612774375989" duration="1129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8845000" />
+    <option name="totallyTimeSpent" value="13154000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -226,10 +219,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="-944" width="1403" height="781" extended-state="0" />
+    <frame x="26" y="45" width="1403" height="781" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23438647" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25495958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,20 +282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <marker date="1612513615973" expanded="true" signature="40:962" ph="{...}" />
-            <marker date="1612513615973" expanded="true" signature="69:960" ph="{...}" />
-            <marker date="1612513615973" expanded="true" signature="122:954" ph="{...}" />
-            <marker date="1612513615973" expanded="true" signature="133:809" ph="/* ##region Proxy 代理模式 ... */" />
-            <marker date="1612513615973" expanded="true" signature="823:944" ph="Emit的调用" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EmitTest.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -328,38 +307,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Decorator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="61" column="60" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+        <state relative-caret-position="165">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
           <folding>
-            <marker date="1612495350864" expanded="true" signature="40:1210" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="47:237" ph="/* 装饰器模式(组合优于继承) ... */" />
-            <marker date="1612495350864" expanded="true" signature="274:324" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="372:502" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="415:496" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="540:794" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="641:697" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="735:788" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="843:1000" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="886:994" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="1049:1206" ph="{...}" />
-            <marker date="1612495350864" expanded="true" signature="1092:1200" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="40:1145" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="47:175" ph="/* 装饰器模式(组合优于继承) ... */" />
+            <marker date="1612752340398" expanded="true" signature="212:262" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="310:440" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="353:434" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="478:731" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="578:634" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="672:725" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="780:937" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="823:931" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="986:1143" ph="{...}" />
+            <marker date="1612752340398" expanded="true" signature="1029:1137" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Example/ProxyExample.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="45">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="29" />
           <folding>
-            <marker date="1612665478318" expanded="true" signature="48:693" ph="{...}" />
-            <marker date="1612665478318" expanded="true" signature="80:146" ph="{...}" />
-            <marker date="1612665478318" expanded="true" signature="189:240" ph="{...}" />
-            <marker date="1612665478318" expanded="true" signature="280:402" ph="{...}" />
-            <marker date="1612665478318" expanded="true" signature="324:396" ph="{...}" />
-            <marker date="1612665478318" expanded="true" signature="439:691" ph="{...}" />
-            <marker date="1612665478318" expanded="true" signature="468:558" ph="{...}" />
-            <marker date="1612665478318" expanded="true" signature="634:685" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="48:763" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="80:216" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="122:209" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="259:310" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="350:472" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="394:466" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="509:761" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="538:628" ph="{...}" />
+            <marker date="1612680733446" expanded="true" signature="704:755" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChainResponsibility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <marker date="1612770655000" expanded="true" signature="40:1415" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="51:236" ph="/* 责任链模式 ... */" />
+            <marker date="1612770655000" expanded="true" signature="274:420" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="317:413" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="457:559" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="592:903" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="621:686" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="735:897" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="814:887" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="943:1065" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="997:1059" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="1103:1412" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="1135:1195" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="1244:1406" ph="{...}" />
+            <marker date="1612770655000" expanded="true" signature="1323:1396" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <marker date="1612680793672" expanded="true" signature="6:44" ph="..." />
+            <marker date="1612680793672" expanded="true" signature="71:1056" ph="{...}" />
+            <marker date="1612680793672" expanded="true" signature="100:1054" ph="{...}" />
+            <marker date="1612680793672" expanded="true" signature="153:1048" ph="{...}" />
+            <marker date="1612680793672" expanded="true" signature="164:987" ph="/* ##region Proxy 代理模式 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Composite.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding>
+            <marker date="1612775130211" expanded="true" signature="6:39" ph="..." />
+            <marker date="1612775130211" expanded="true" signature="66:1328" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="95:116" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="152:318" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="228:274" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="357:656" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="477:497" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="534:567" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="605:650" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="690:874" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="742:762" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="799:868" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="910:1096" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="964:984" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="1021:1090" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="1136:1326" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="1194:1214" ph="{...}" />
+            <marker date="1612775130211" expanded="true" signature="1251:1320" ph="{...}" />
           </folding>
         </state>
       </provider>

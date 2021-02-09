@@ -39,6 +39,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AopTest.cs" />
+    <Compile Include="ChainResponsibility.cs" />
+    <Compile Include="Composite.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="EmitTest.cs" />
     <Compile Include="Example\ProxyExample.cs" />

@@ -4,6 +4,8 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="AopTest.cs" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="ChainResponsibility.cs" t="Include" />
+      <e p="Composite.cs" t="Include" />
       <e p="D_DesignPattern.csproj" t="IncludeRecursive" />
       <e p="D_DesignPattern.sln" t="IncludeFlat" />
       <e p="Decorator.cs" t="Include" />
