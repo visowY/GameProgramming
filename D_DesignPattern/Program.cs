@@ -33,8 +33,13 @@ namespace D_DesignPattern
 //            tp.Do();
 //            #endregion
 
+            
 
-             ProxyExample.DoMain();
+
+//             ProxyExample.DoMain();
+
+                // 适配器模式
+                Adapter.DoMian();
             
         }
     }
