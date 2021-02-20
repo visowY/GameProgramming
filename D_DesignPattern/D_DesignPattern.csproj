@@ -43,10 +43,13 @@
     <Compile Include="Bridge.cs" />
     <Compile Include="BridgeExam.cs" />
     <Compile Include="ChainResponsibility.cs" />
+    <Compile Include="Command.cs" />
     <Compile Include="Composite.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="EmitTest.cs" />
     <Compile Include="Example\ProxyExample.cs" />
+    <Compile Include="FlyweightExam.cs" />
+    <Compile Include="MediatorExam.cs" />
     <Compile Include="MementoPattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

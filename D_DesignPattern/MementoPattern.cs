@@ -72,7 +72,8 @@ namespace D_DesignPattern
             set => _memento = value;
         }
     }
-
+    
+    
 
     #endregion 
 }

@@ -39,7 +39,10 @@ namespace D_DesignPattern
 //             ProxyExample.DoMain();
 
                 // 适配器模式
-                Adapter.DoMian();
+//                Adapter.DoMian();
+                
+                //中介者模式
+                MediatorExam.DoMain();
             
         }
     }

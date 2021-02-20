@@ -148,6 +148,8 @@ namespace D_DesignPattern
 
 * 定义：命令模式的目的是接触命令发出者和接受者之间的紧密耦合关系，使二者相对独立，有利于程序的并行开发和代码的维护。命令模式的核心思想是将请求封装为一个对象，将其作为命令发起者和接受者的中介，二抽象出来的命令对像又使得能够对一系列请求进行操作，如对请求进行排队，记录请求日志以及支持可撤销的操作等。
 
+* 类型： 行为行模式
+
 * 结构：
     1. Command: 命令抽象类，声明一个执行操作的接口Execute,该抽象类不实现这个接口，所有的具体命令都继承自命令抽象类。
     2. ConcreteCommand: 定义一个接受者对象对象&动作之间的绑定 //  调用Receiver的操作，实现Execute方法。
@@ -159,5 +161,263 @@ namespace D_DesignPattern
 
 * 示例代码
 ```csharp
+namespace D_DesignPattern
+{
+    public class CommandExam
+    {
+        public static void DoMain()
+        {
+            Receiver r =new Receiver();
+            Command c = new ConcreteCommandA(r);
+            Invoke i = new Invoke(c);
+            
+            i.ExecuteCommand();
+        }
+    }
 
+    #region 命令模式
+    public abstract class Command
+    {
+        protected Receiver _receiver;
+
+        public Command(Receiver receiver)
+        {
+            _receiver = receiver;
+        }
+
+        public abstract void Action();
+    }
+
+
+    public class ConcreteCommandA : Command
+    {
+        public ConcreteCommandA(Receiver receiver) : base(receiver)
+        {
+        }
+
+        public override void Action()
+        {
+            _receiver.Run1000Meters();
+        }
+    }
+
+    public class Invoke
+    {
+        public Command _command;
+
+        public Invoke(Command command)
+        {
+            _command = command;
+        }
+
+        public void ExecuteCommand()
+        {
+            _command.Action();
+        }
+    }
+
+    public class Receiver
+    {
+        public void Run1000Meters()
+        {
+            Console.WriteLine("跑100m");
+        }
+    }
+
+    #endregion 
+}
 ```
+
+* 优点：
+    1. 命令模式使得新的命令很容易被加入到系统中
+    2. 可以设计一个命令队列来实现对请求的`Undo`和`Redo`操作。
+    3. 可以较容易的将命令写入日志。
+    4. 可以把命令聚合在一起，合成为合成命令。合成命令合成模式的应用。
+
+## 11. 享元模式
+
+* 定义：运用共享技术有效地支持大量细粒度的对象。享元模式可以避免大量相似类的开销，在软件开发过程中如果需要生成大量细粒度的类实例来表示数据，如果这些实例除了几个参数外基本上都是相同的，这时候就可以使用享元模式来大幅度减少需要实例化类的数量。如果能把这些参数（指的是这些类实例不同的参数）移到实例类外面，在方法调用时将他们传递进来，这样就可以通过共享大幅度减少单个实例的数目（这也是享元模式实现的要领），然而我们把类实例外面的参数称为享元对象的外部状态，把在享元对象内部状态与外部状态的定义为：
+
+    1. 内部状态：在享元对象的内部并且不会随着环境改变而改变的共享部分
+
+    2. 外部状态：随着环境改变而改变，不可以共享的状态。
+
+* 代码示例：
+```csharp
+namespace D_DesignPattern
+{
+    public class FlyweightExam
+    {
+        
+    }
+    
+    # region 享元模式
+
+    public abstract class Flyweight
+    {
+        public abstract void Operation(int extrinsicstate);
+    }
+
+
+    public class FlyweightFactory
+    {
+        public Dictionary<string , Flyweight> _dictFlyweights = new Dictionary<string, Flyweight>();
+
+        public FlyweightFactory()
+        {
+            _dictFlyweights.Add("A" , new ConcreteFlyweight("A"));
+            _dictFlyweights.Add("B" ,  new ConcreteFlyweight("B"));
+            _dictFlyweights.Add("C" , new ConcreteFlyweight("C"));
+        }
+
+        public Flyweight GetFlyweight(string key)
+        {
+            Flyweight temp;
+            if (!_dictFlyweights.TryGetValue(key, out temp))
+            {
+                Console.WriteLine("驻留池中不存在字符串" + key);
+                return null;
+            }
+            return temp;
+        }
+    }
+
+    public class ConcreteFlyweight : Flyweight
+    {
+        public string _instrinsicstate;
+
+        public ConcreteFlyweight(string innerstate)
+        {
+            _instrinsicstate = innerstate;
+        }
+
+        public override void Operation(int extrinsicstate)
+        {
+            Console.WriteLine($"具体的实现类： intrinsicstate: {_instrinsicstate}, extrinsicstate; {extrinsicstate}");
+        }
+    }
+    # endregion 
+}
+```
+* 在下面所有条件都满足时，可以考虑使用享元模式：
+
+    1. 一个系统中有大量的对象；
+    2. 这些对象耗费大量的内存；
+    3. 这些对象中的状态大部分都可以被外部化
+    4. 这些对象可以按照内部状态分成很多的组，当把外部对象从对象中剔除时，每一个组都可以仅用一个对象代替
+    5. 软件系统不依赖这些对象的身份，
+
+* 注意：
+    满足上面的条件的系统可以使用享元模式。但是使用享元模式需要额外维护一个记录子系统记录已有的所有享元的表，而这也需要耗费资源，所以，应当在有足够多的享元实例可共享时才值得使用享元模式。
+
+* 总结：
+    享元模式主要是用来解决由于大量的细粒度对象所造成的内存开销问题，它在实际开发中并不常用，可以作为底层的提升性能的一种手段。
+
+## 12.中介者模式
+
+* 定义：中介者模式，定义了一个中介对象来封装一系列对象之间的交互关系。中介者使各个对象之间不需要显式地相互引用，从而是耦合性降低，而且可以独立改变它们之间的交互行为。
+
+* 代码示例：
+
+```csharp
+namespace D_DesignPattern
+{
+    public class MediatorExam
+    {
+        public static void DoMain()
+        {
+            AbstractCardPartner A = new PartnerA();
+            AbstractCardPartner B = new PartnerB();
+
+            A.MoneyCount = 20;
+            B.MoneyCount = 20;
+            AbstractMediator mediator = new MediatorPartner(A,B);
+            
+            A.ChangeCount(5,mediator);
+
+            Console.WriteLine($"A 现在的钱是：{A.MoneyCount}");
+            Console.WriteLine($"B 现在的钱是: {B.MoneyCount}");
+
+            Console.WriteLine("=====================");
+            
+            B.ChangeCount(10,mediator);
+            Console.WriteLine($"A 现在的钱是：{A.MoneyCount}");
+            Console.WriteLine($"B 现在的钱是: {B.MoneyCount}");
+        }
+    }
+
+    # region 中介者模式
+
+    public abstract class AbstractCardPartner
+    {
+        public int MoneyCount { get; set; }
+
+        public AbstractCardPartner()
+        {
+            MoneyCount = 0;
+        }
+
+        public abstract void ChangeCount(int count, AbstractMediator mediator);
+    }
+
+    public class PartnerA : AbstractCardPartner
+    {
+        public override void ChangeCount(int count, AbstractMediator mediator)
+        {
+            mediator.AWin(count);
+        }
+    }
+
+    public class PartnerB : AbstractCardPartner
+    {
+        public override void ChangeCount(int count, AbstractMediator mediator)
+        {
+            mediator.BWin(count);
+        }
+    }
+
+    public abstract class AbstractMediator
+    {
+        protected AbstractCardPartner A;
+        protected AbstractCardPartner B;
+
+        public AbstractMediator(AbstractCardPartner a, AbstractCardPartner b)
+        {
+            A = a;
+            B = b;
+        }
+
+        public abstract void AWin(int count);
+        public abstract void BWin(int count);
+    }
+
+    public class MediatorPartner : AbstractMediator
+    {
+        public MediatorPartner(AbstractCardPartner a, AbstractCardPartner b) : base(a, b)
+        {
+        }
+
+        public override void AWin(int count)
+        {
+            A.MoneyCount += count;
+            B.MoneyCount -= count;
+        }
+
+        public override void BWin(int count)
+        {
+            A.MoneyCount -= count;
+            B.MoneyCount += count;
+        }
+    }
+    # endregion
+}
+```
+
+* 总结
+> 中介者模式，定义了一个中介对象来封装系列对象之间的交互。中介者使各个对象不需要显式地相互引用，从而使其耦合性降低，而且可以独立地改变它们之间的交互。中介者模式一般应用于一组定义良好的对象之间需要进行通信的场合以及想定制一个分布在多个类中的行为，而又不想生成太多的子类的情形下。
+
+> 新增加一个相同类时，不得不去修改抽象中介者类和具体中介者类，此时可以使用观察者模式和状态模式来解决这个问题。
+
+## 13. 观察者模式
+
+* 定义：观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听一个主题对象，这个主题对象在状态发生改变时，会通知所有观察者对象，使它们能够自动更新自己的行为。
