@@ -421,3 +421,355 @@ namespace D_DesignPattern
 ## 13. 观察者模式
 
 * 定义：观察者模式定义了一种一对多的依赖关系，让多个观察者对象同时监听一个主题对象，这个主题对象在状态发生改变时，会通知所有观察者对象，使它们能够自动更新自己的行为。
+
+* 角色分类
+    1. Subject: 抽象主题角色，把所有观察者对象的引用保存在一个列表中，并提供增加和删除观察者对象的操作，（抽象类/接口）
+    2. Observer: 抽象观察者角色， 为所有具体观察者定义接口，在得到主题通知时更新自己（抽象类/接口）
+    3. ConcreteSubject: 具体主题角色，实现抽象主题
+    4. ConcreteObserver: 实现抽象观察者角色所要求的接口。
+
+* 代码示例1
+```csharp
+ #region 观察者模式示例1：
+
+
+    //订阅号抽象类
+    public abstract class Game
+    {
+        private List<IObserver> observers = new List<IObserver>();
+
+        public string Symbol { get; set; }
+        public string Info { get; set; }
+
+        public Game(string symbol, string info)
+        {
+            Symbol = symbol;
+            Info = info;
+        }
+
+        # region 新增对订阅号列表的维护操作
+
+        public void AddObserver(IObserver ob)
+        {
+            observers.Add(ob);
+        }
+
+        public void RemoveObserver(IObserver ob)
+        {
+            observers.Remove(ob);
+        }
+
+        #endregion
+
+        public void Update()
+        {
+            observers.ForEach(_ => _.ReceiveAndPrint(this));
+        }
+    }
+
+    // 订阅者接口
+    public interface IObserver
+    {
+        void ReceiveAndPrint(Game game);
+    }
+
+
+    public class TenGame : Game
+    {
+        public TenGame(string symbol, string info) : base(symbol, info)
+        {
+        }
+    }
+
+    //订阅者类
+    public class Subscriber : IObserver
+    {
+        public string Name { get; set; }
+
+        public Subscriber(string name)
+        {
+            Name = name;
+        }
+
+        public void ReceiveAndPrint(Game game)
+        {
+            Console.WriteLine($"Notified {Name} of {game.Symbol}'s Info is {game.Info} ");
+        }
+    }
+    #endregion
+```
+* 代码示例2 
+```csharp
+    # region csharp 中使用事件&委托简化观察者模式
+
+    // 委托充当订阅者接口类
+    public delegate void NotifyEventHandler(object sender);
+
+
+    // 抽象订阅号类
+    public class Game2
+    {
+        public NotifyEventHandler NotifyEvent;
+
+        public string Symbol { get; set; }
+        public string Info { get; set; }
+
+        public Game2(string symbol, string info)
+        {
+            Symbol = symbol;
+            Info = info;
+        }
+
+        # region 对订阅号列表的维护
+
+        public void AddObserver(NotifyEventHandler ob)
+        {
+            NotifyEvent += ob;
+        }
+
+        public void RemoveObserver(NotifyEventHandler ob)
+        {
+            NotifyEvent -= ob;
+        }
+
+        # endregion
+
+        public void Update()
+        {
+            NotifyEvent?.Invoke(this);
+        }
+    }
+
+    //具体订阅号
+    public class TenGame2 : Game2
+    {
+        public TenGame2(string symbol, string info) : base(symbol, info)
+        {
+            
+        }
+    }
+
+    //具体订阅者类
+    public class Subscriber2
+    {
+        public string Name { get; set; }
+
+        public Subscriber2(string name)
+        {
+            this.Name = name;
+        }
+
+        public void ReceiveAndPrint(object obj)
+        {
+            var game = obj as TenGame2;
+            if (game != null)
+            {
+                Console.WriteLine($"Notified {Name} of {game.Symbol}'s info is {game.Info}");
+            }
+        }
+    }
+    # endregion
+```
+
+* 总结：
+>到这里，观察者模式的分享就介绍了。观察者模式定义了一种一对多的依赖关系，让多个观察者对象可以同时监听某一个主题对象，这个主题对象在发生状态变化时，会通知所有观察者对象，使它们能够自动更新自己，解决的是“当一个对象的改变需要同时改变多个其他对象”的问题
+
+## 14.状态模式
+
+* 定义：
+    1. 状态模式将每种状态对应的行为抽象出来成为单独新的对象，这样状态的变化不再依赖于对象内部的行为。
+    2. 状态模式——允许一个对象在其内部状态改变时自动改变其行为，对象看起来就像是改变了它的类。
+* 示例代码：
+
+```csharp
+    # region 状态模式
+
+    //抽象状态类
+    public abstract class State
+    {
+        public Account Account { get; set; }
+        public double Balance { get; set; }
+        public double Interest { get; set; }
+        public double LowerLimit { get; set; } //下限
+        public double UpperLimit { get; set; }
+
+        public abstract void Deposit(double amount);
+        public abstract void Withdraw(double amount);
+        public abstract void PayInterest(); //获取利息
+    }
+
+
+    //透支状态
+    public class RedState : State
+    {
+        public RedState(State state)
+        {
+            Balance = state.Balance;
+            Account = state.Account;
+            Interest = 0.00;
+            LowerLimit = -100.00;
+            UpperLimit = 0.00;
+        }
+
+        public override void Deposit(double amount)
+        {
+            Balance += amount;
+        }
+
+        public override void Withdraw(double amount)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void PayInterest()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void StateChangeCheck()
+        {
+            if (Balance > UpperLimit)
+            {
+                Account.State = new SilverState(this);
+            }
+        }
+    }
+
+
+    //标准账户
+    public class SilverState : State
+    {
+        public SilverState(State state) : this(state.Balance, state.Account)
+        {
+        }
+
+        public SilverState(double balance, Account account)
+        {
+            Balance = balance;
+            Account = account;
+            Interest = 0.00;
+            LowerLimit = 0.00;
+            UpperLimit = 1000.00;
+        }
+
+
+        public override void Deposit(double amount)
+        {
+            Balance += amount;
+            StateChangeCheck();
+        }
+
+        public override void Withdraw(double amount)
+        {
+            Balance -= amount;
+            StateChangeCheck();
+        }
+
+        public override void PayInterest()
+        {
+            Balance += Interest * Balance;
+            StateChangeCheck();
+        }
+
+        private void StateChangeCheck()
+        {
+            if (Balance < LowerLimit)
+            {
+                Account.State = new RedState(this);
+            }
+            else if (Balance > UpperLimit)
+            {
+                Account.State = new GoldState(this);
+            }
+        }
+    }
+
+
+    public class GoldState : State
+    {
+        public GoldState(State state)
+        {
+            Balance = state.Balance;
+            Account = state.Account;
+            Interest = 0.05;
+            LowerLimit = 1000.00;
+            UpperLimit = 10000000.00;
+        }
+
+        public override void Deposit(double amount)
+        {
+            Balance += amount;
+            StateChangeCheck();
+        }
+
+        public override void Withdraw(double amount)
+        {
+            Balance -= amount;
+            StateChangeCheck();
+        }
+
+        public override void PayInterest()
+        {
+            Balance += Interest * Balance;
+            StateChangeCheck();
+        }
+
+        private void StateChangeCheck()
+        {
+            if (Balance < 0.0)
+            {
+                Account.State = new RedState(this);
+            }
+            else if (Balance < LowerLimit)
+            {
+                Account.State = new SilverState(this);
+            }
+        }
+    }
+
+
+    public class Account
+    {
+        public State State { get; set; }
+        public string Owner { get; set; }
+
+        public Account(string owner)
+        {
+            Owner = owner;
+            State = new SilverState(0.0, this);
+        }
+
+        public double Balance
+        {
+            get => State.Balance;
+        }
+
+        public void Deposit(double amount)
+        {
+            State.Deposit(amount);
+            Console.WriteLine($"存款金额为 {amount:C}");
+            Console.WriteLine($"账户余额为 {Balance:C}");
+            Console.WriteLine($"账户状态为 {State.GetType().Name}");
+            Console.WriteLine();
+        }
+
+        public void WithDraw(double amount)
+        {
+            State.Withdraw(amount);
+            Console.WriteLine($"取款金额为 {amount:C}");
+            Console.WriteLine($"账户余额为 {Balance:C}");
+            Console.WriteLine($"账户状态为 {State.GetType().Name}");
+        }
+
+        public void PayInterest()
+        {
+            State.PayInterest();
+            Console.WriteLine("Interest Paid --- ");
+            Console.WriteLine("账户余额为 =:{0:C}", this.Balance);
+            Console.WriteLine("账户状态为: {0}", this.State.GetType().Name);
+            Console.WriteLine();
+        }
+    }
+
+    # endregion
+```

@@ -42,8 +42,14 @@ namespace D_DesignPattern
 //                Adapter.DoMian();
                 
                 //中介者模式
-                MediatorExam.DoMain();
-            
+//                MediatorExam.DoMain();
+
+                // 观察者模式
+//                ObserverExam.DoMain();
+                
+
+                // 状态模式
+                StateExam.DoMain();
         }
     }
 }
