@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53273d0-2f00-4f28-9b7c-c30d2d7dcd09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlyweightExam.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MediatorExam.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.D_DesignPattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/D_DesignPattern.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/D_DesignPattern.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MementoPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MementoPattern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/D_DesignPattern.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/D_DesignPattern.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Documents/DesignPattern.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Documents/DesignPattern.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MediatorExam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MediatorExam.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,25 +108,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MediatorExam.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-333">
-              <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            <state relative-caret-position="167">
+              <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
               <folding>
-                <marker date="1613824890122" expanded="true" signature="40:2282" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="72:770" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="114:764" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="776:2280" ph="中介者模式" />
-                <marker date="1613824890122" expanded="true" signature="837:1060" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="925:973" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1109:1254" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1194:1248" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1303:1448" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1388:1442" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1492:1816" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1659:1717" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1869:2263" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="1965:1985" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="2031:2121" ph="{...}" />
-                <marker date="1613824890122" expanded="true" signature="2167:2257" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="40:2295" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="72:770" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="114:764" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="776:2293" ph="中介者模式" />
+                <marker date="1613960666195" expanded="true" signature="837:1060" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="925:973" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1109:1254" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1194:1248" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1303:1448" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1388:1442" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1492:1816" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1659:1717" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1869:2276" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="1965:1998" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="2044:2134" ph="{...}" />
+                <marker date="1613960666195" expanded="true" signature="2180:2270" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -201,8 +188,8 @@
         <option value="$PROJECT_DIR$/MementoPattern.cs" />
         <option value="$PROJECT_DIR$/Command.cs" />
         <option value="$PROJECT_DIR$/FlyweightExam.cs" />
-        <option value="$PROJECT_DIR$/MediatorExam.cs" />
         <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/MediatorExam.cs" />
       </list>
     </option>
   </component>
@@ -214,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="115" />
     <option name="y" value="56" />
     <option name="width" value="1106" />
@@ -314,12 +301,12 @@
       <workItem from="1612837997199" duration="1051000" />
       <workItem from="1613788900891" duration="3077000" />
       <workItem from="1613802706692" duration="4727000" />
-      <workItem from="1613820073144" duration="3914000" />
+      <workItem from="1613820073144" duration="4184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25923000" />
+    <option name="totallyTimeSpent" value="26193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,9 +319,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26251787" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26251787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -666,25 +652,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MediatorExam.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        <state relative-caret-position="167">
+          <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
           <folding>
-            <marker date="1613824890122" expanded="true" signature="40:2282" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="72:770" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="114:764" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="776:2280" ph="中介者模式" />
-            <marker date="1613824890122" expanded="true" signature="837:1060" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="925:973" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1109:1254" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1194:1248" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1303:1448" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1388:1442" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1492:1816" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1659:1717" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1869:2263" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="1965:1985" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="2031:2121" ph="{...}" />
-            <marker date="1613824890122" expanded="true" signature="2167:2257" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="40:2295" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="72:770" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="114:764" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="776:2293" ph="中介者模式" />
+            <marker date="1613960666195" expanded="true" signature="837:1060" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="925:973" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1109:1254" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1194:1248" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1303:1448" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1388:1442" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1492:1816" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1659:1717" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1869:2276" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="1965:1998" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="2044:2134" ph="{...}" />
+            <marker date="1613960666195" expanded="true" signature="2180:2270" ph="{...}" />
           </folding>
         </state>
       </provider>

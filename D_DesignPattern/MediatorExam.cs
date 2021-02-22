@@ -75,6 +75,7 @@ namespace D_DesignPattern
     {
         public MediatorPartner(AbstractCardPartner a, AbstractCardPartner b) : base(a, b)
         {
+            
         }
 
         public override void AWin(int count)
