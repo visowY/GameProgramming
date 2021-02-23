@@ -7,6 +7,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Bridge.cs" t="Include" />
       <e p="BridgeExam.cs" t="Include" />
+      <e p="BuilderExam.cs" t="Include" />
       <e p="ChainResponsibility.cs" t="Include" />
       <e p="Command.cs" t="Include" />
       <e p="Composite.cs" t="Include" />
@@ -17,7 +18,9 @@
       <e p="Example" t="Include">
         <e p="ProxyExample.cs" t="Include" />
       </e>
+      <e p="FacadeExam.cs" t="Include" />
       <e p="FlyweightExam.cs" t="Include" />
+      <e p="IOCExam.cs" t="Include" />
       <e p="MediatorExam.cs" t="Include" />
       <e p="MementoPattern.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
@@ -26,9 +29,12 @@
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
+        <e p="TemplateExam.cs" t="Include" />
       </e>
       <e p="Proxy.cs" t="Include" />
       <e p="StateExam.cs" t="Include" />
+      <e p="StrategyExam.cs" t="Include" />
+      <e p="VistorExam.cs" t="Include" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_D_DesignPattern.1796917466.00" t="ExcludeRecursive" />

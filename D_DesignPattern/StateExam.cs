@@ -158,8 +158,8 @@ namespace D_DesignPattern
 
     public class Account
     {
-        public State State { get; set; }
-        public string Owner { get; set; }
+        public State State { get ; set; }
+        public string Owner { get ; set; }
 
         public Account(string owner)
         {

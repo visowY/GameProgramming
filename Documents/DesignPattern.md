@@ -773,3 +773,430 @@ namespace D_DesignPattern
 
     # endregion
 ```
+
+## 15 策略模式
+
+* 定义：
+    1. 策略模式是针对一组算法，将每个算法封装到具有公共接口的独立的类中，从而使它们可以相互替换。策略模式使得算法可以在不影响到客户端的情况下发生变化。
+    2. 策略模式是对算法的包装，是把使用算法的责任和算法本身分割开，委派给不同的对象负责。策略模式通常把一系列的算法包装到一系列的策略类里面。用一句话慨括策略模式就是——“将每个算法封装到不同的策略类中，使得它们可以互换”。
+
+* 成员结构：
+    1. Context: 环境角色，持有一个Strategy类的引用。
+    2. Strategy: 抽象策略角色，给出所有具体策略类所需要实现的接口。
+    3. ConcreteStrategy:具体策略角色，包装了相关算法或行为。
+
+* 示例代码：
+```csharp
+namespace D_DesignPattern
+{
+    public class StrategyExam
+    {
+        public static void DoMain()
+        {
+            // 个人所得税方式
+            InterestOperation operation = new InterestOperation(new PersonalTaxStrategy());
+            Console.WriteLine("个人支付的税为：{0}", operation.GetTax(5000.00));
+
+            // 企业所得税
+            operation = new InterestOperation(new EnterpriseTaxStrategy());
+            Console.WriteLine("企业支付的税为：{0}", operation.GetTax(50000.00));
+        }
+    }
+
+    #region 策略模式
+
+    public interface ITaxStrategy
+    {
+        double CalculateTax(double income);
+    }
+
+    public class PersonalTaxStrategy : ITaxStrategy
+    {
+        public double CalculateTax(double income)
+        {
+            return income * 0.12;
+        }
+    }
+
+    public class EnterpriseTaxStrategy : ITaxStrategy
+    {
+        public double CalculateTax(double income)
+        {
+            return (income - 3500) > 0 ? (income - 3500) * 0.045 : 0.0;
+        }
+    }
+
+    public class InterestOperation
+    {
+        private ITaxStrategy _strategy;
+
+        public InterestOperation(ITaxStrategy strategy)
+        {
+            _strategy = strategy;
+        }
+
+        public double GetTax(double income)
+        {
+            return _strategy.CalculateTax(income);
+        }
+    }
+
+    #endregion
+}
+```
+
+* 适用场景：
+    1.  一个系统需要动态地在几种算法中选择一种的情况下。那么这些算法可以包装到一个个具体的算法类里面，并为这些具体的算法类提供一个统一的接口。
+    2. 如果一个对象有很多的行为，如果不使用合适的模式，这些行为就只好使用多重的if-else语句来实现，此时，可以使用策略模式，把这些行为转移到相应的具体策略类里面，就可以避免使用难以维护的多重条件选择语句，并体现面向对象涉及的概念。
+
+
+
+## 16.访问者模式
+
+* 定义：
+> 　访问者模式是封装一些施加于某种数据结构之上的操作。一旦这些操作需要修改的话，接受这个操作的数据结构则可以保存不变。访问者模式适用于数据结构相对稳定的系统， 它把数据结构和作用于数据结构之上的操作之间的耦合度降低，使得操作集合可以相对自由地改变。
+
+> 数据结构的每一个节点都可以接受一个访问者的调用，此节点向访问者对象传入节点对象，而访问者对象则反过来执行节点对象的操作。这样的过程叫做“双重分派”。节点调用访问者，将它自己传入，访问者则将某算法针对此节点执行。
+
+* 角色：
+    1. Vistor:  声明一个活多个访问操作，使得所有具体访问者必须实现的接口。
+    2. ConcreteVistor: 实现抽象访问者角色中所有声明的接口。
+    3. Element: 声明一个接受操作，接受一个访问者对象作为参数。
+    4. ConcreteElement: 实现抽象元素所规定的接受操作。
+    5. ObjectStructure: 节点的容器，可以包含多个不同类或接口的容器。
+* 简介：
+> 把作用于具体元素的操作由访问者对象来调用
+
+* 代码示例
+```csharp
+namespace D_DesignPattern
+{
+    public class VistorExam
+    {
+        public static void DoMain()
+        {
+            ObjectStructure objectStructure = new ObjectStructure();
+
+            foreach (Element element in objectStructure.Elements)
+            {
+                element.Accept(new ConcreteViator());
+            }
+        }
+    }
+    
+    # region 访问者模式
+    
+    // 抽象访问者
+    public interface IViator
+    {
+        void Visit(ElementA a);
+        void Visit(ElementB b);
+    }
+    
+    // 具体访问者
+    public class ConcreteViator:IViator
+    {
+        public void Visit(ElementA a)
+        {
+            a.Print();
+        }
+
+        public void Visit(ElementB b)
+        {
+            b.Print();
+        }
+    }
+
+
+    public abstract class Element
+    {
+        public abstract void Print();
+        public abstract void Accept(IViator viator);
+    }
+
+    public class ElementA : Element
+    {
+        public override void Print()
+        {
+            Console.WriteLine("AAAAAAA");
+        }
+
+        public override void Accept(IViator viator)
+        {
+            viator.Visit(this);
+        }
+    }
+    
+    public class ElementB : Element
+    {
+        public override void Print()
+        {
+            Console.WriteLine("BBBBBBB");
+        }
+
+        public override void Accept(IViator viator)
+        {
+            viator.Visit(this);
+        }
+    }
+
+    public class ObjectStructure
+    {
+        private ArrayList elements = new ArrayList();
+
+        public ArrayList Elements => elements;
+
+        public ObjectStructure()
+        {
+            Random ran = new Random();
+            for (int i = 0; i < 6; i++)
+            {
+                int ranNum = ran.Next(10);
+                if (ranNum > 5)
+                {
+                    elements.Add(new ElementA());
+                }
+                else
+                {
+                    elements.Add(new ElementB());
+                }
+            }
+        }
+    }
+    # endregion 
+}
+```
+
+* 使用场景：
+    1. 如果系统有比较稳定的数据结构，而又有易于变化的算法时，此时可以考虑使用访问者模式。因为访问者模式使得算法操作的添加比较容易。
+    2. 如果一组类中，存在着相似的操作，为了避免出现大量重复的代码，可以考虑把重复的操作封装到访问者中。（当然也可以考虑使用抽象类了）
+    3. 如果一个对象存在着一些与本身对象不相干，或关系比较弱的操作时，为了避免操作污染这个对象，则可以考虑把这些操作封装到访问者对象中。
+
+* 总结：
+> 访问者模式是用来封装一些施加于某种数据结构之上的操作。它使得可以在不改变元素本身的前提下增加作用于这些元素的新操作，访问者模式的目的是把操作从数据结构中分离出来。
+
+## 17.外观模式
+* 定义：
+外观模式提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。使用外观模式时，我们创建了一个统一的类，用来包装子系统中一个或多个复杂的类，客户端可以直接通过外观类来调用内部子系统中方法，从而外观模式让客户和子系统之间避免了紧耦合。
+
+
+## 18.建造者模式
+
+* 定义：
+> 有时需要创建一个复杂对象，并且这个复杂对象由其各部分子对象通过一定的步骤组合而成。
+
+* 代码示例：
+```csharp
+namespace D_DesignPattern
+{
+    public class BuilderExam
+    {
+        public static void DoMain()
+        {
+            Direct direct = new Direct();
+            Builder b1 = new ConcreteBuilder1();
+            Builder b2 = new ConcreteBuilder2();
+            
+            direct.Construct(b1);
+
+            Computer c1 = b1.GetComputer();
+            c1.Show();
+            
+            direct.Construct(b2);
+            Computer c2 = b2.GetComputer();
+            c2.Show();
+        }
+    }
+    
+    # region 建造者模式
+
+
+    public class Direct
+    {
+
+        public void Construct(Builder builder)
+        {
+            builder.BuildPartCPU();
+            builder.BuildPartMainBoard();
+        }
+    }
+
+    //抽象建造者
+    public abstract class Builder
+    {
+        public abstract void BuildPartCPU();
+
+        public abstract void BuildPartMainBoard();
+
+        public abstract Computer GetComputer();
+
+    }
+
+    public class ConcreteBuilder1 : Builder
+    {
+        Computer _computer = new Computer();
+        
+        public override void BuildPartCPU()
+        {
+            _computer.Add("CPU1");
+        }
+
+        public override void BuildPartMainBoard()
+        {
+            _computer.Add("Main Board 1");
+        }
+
+        public override Computer GetComputer()
+        {
+            return _computer;
+        }
+    }
+    
+    public class ConcreteBuilder2 : Builder
+    {
+        Computer _computer = new Computer();
+        
+        public override void BuildPartCPU()
+        {
+            _computer.Add("CPU2");
+        }
+
+        public override void BuildPartMainBoard()
+        {
+            _computer.Add("Main Board 2");
+        }
+
+        public override Computer GetComputer()
+        {
+            return _computer;
+        }
+    }
+
+
+    public class Computer
+    {
+        private IList<string> parts = new List<string>();
+
+        public void Add(string part)
+        {
+            parts.Add(part);
+        }
+
+        public void Show()
+        {
+            Console.WriteLine("组装开始");
+            foreach (var part in parts)
+            {
+                Console.WriteLine($"组件 {part} 已经组装好了");
+            }
+            Console.WriteLine("组装完成");
+        }
+    }
+    # endregion 
+}
+```
+
+* 总结：
+>将一个复杂对象的构建与它的表示分离，使的同样的构建过程可以创建不同的表示。建造者模式的本质是使组装过程（用指挥者类进行封装，从而达到解耦的目的）和创建具体产品解耦,使我们不用去关心每个组件是如何组装的.
+
+
+## 19.模版方法模式
+
+* 定义：
+> 在一个抽象类中定义一个操作中的算法骨架（对应于生活中的大家下载的模板），而将一些步骤延迟到子类中去实现（对应于我们根据自己的情况向模板填充内容）。模板方法使得子类可以不改变一个算法的结构前提下，重新定义算法的某些特定步骤，模板方法模式把不变行为搬到超类中，从而去除了子类中的重复代码。
+
+* 代码示例：
+```csharp
+namespace D_DesignPattern.Properties
+{
+    public class TemplateExam
+    {
+        public static void DoMain()
+        {
+            Spinach spinach = new Spinach();
+            spinach.CookVegetable();
+            
+        }
+    }
+    
+    #region 模版方法模式
+
+    public abstract class Vegetable
+    {
+        public void CookVegetable()
+        {
+            Console.WriteLine("炒菜一般做法");
+            PourOil();
+            HeatOil();
+            PourVegetable();
+            StirFry();
+        }
+
+        public void PourOil()
+        {
+            Console.WriteLine("倒油");
+        }
+
+        public void HeatOil()
+        {
+            Console.WriteLine("热油");
+        }
+
+        public abstract void PourVegetable();
+
+        public void StirFry()
+        {
+            Console.WriteLine("翻炒");
+        }
+    }
+
+    public class Spinach : Vegetable
+    {
+        public override void PourVegetable()
+        {
+            Console.WriteLine("倒菠菜");
+        }
+    }
+    
+    public class ChineseCabbage : Vegetable
+    {
+        public override void PourVegetable()
+        {
+            Console.WriteLine("倒白菜");
+        }
+    }
+    #endregion 
+}
+```
+
+* 总结
+>模板方法模式在抽象类中定义了算法的实现步骤，将这些步骤的实现延迟到具体子类中去实现，从而使所有子类复用了父类的代码，所以模板方法模式是基于继承的一种实现代码复用的技术。
+
+## 额外模式： IOC 控制反转｜｜依赖注入
+
+* 组件：它将被作者无法控制的其他应用程序使用，但后者不能对组件进行修改。也就是说，使用一个组件的应用程序不能修改组件的源代码，但可以通过作者预留的某种途径对其进行扩展，以改变组件的行为。
+
+* 服务： 服务和组件有某种相似之处：它们都将被外部的应用程序使用。在我看来，两者之间最大的差异在于：组件是在本地使用的（例如JAR 文件、程序集、DLL、或者源码导入）；而服务是要通过——同步或异步的——远程接口来远程使用的（例如 web   service、消息系统、RPC，或者 socket ）。
+
+* 依赖注入：依赖注入是一个过程，就是当一个类需要调用另一个类来完成某项任务的时候，在调用类里面不要去new被调用的类的对象，而是通过注入的方式来获取这样一个对象。具体的实现就是在调用类里面有一个被调用类的接口，然后通过调用接口的函数来完成任务。比如A调用B，而B实现了接口C，那么在A里面用C定义一个变量D，这个变量的实例不在A里面创建，而是通过A的上下文来获取。这样做的好处就是将类A和B分开了，他们之间靠接口C来联系，从而实现对接口编程。
+
+
+* 依赖注入的3种形式：
+    1. 构造子注入
+    2. 设值方法注入
+    3. 接口注入
+
+* 架构的本质是把变化的部分和不变的部分隔离开来，使得变化的部分发生变化时，不变部分不受影响。
+
+* Setter 注入：
+> Setter注入（Setter Injection）是指在客户类中，设置一个服务类接口类型的数据成员，并设置一个Set方法作为注入点，这个Set方法接受一个具体的服务类实例为参数，并将它赋给服务类接口类型的数据成员。
+
+* 构造注入：
+> 构造注入（Constructor Injection）是指在客户类中，设置一个服务类接口类型的数据成员，并以构造函数为注入点，这个构造函数接受一个具体的服务类实例为参数，并将它赋给服务类接口类型的数据成员。
+
+>与Setter注入很类似，只是注入点由Setter方法变成了构造方法。这里要注意，由于构造注入只能在实例化客户类时注入一次，所以一点注入，程序运行期间是没法改变一个客户类对象内的服务类实例的。
+
+
+* 依赖获取：
+> 依赖获取（Dependency Locate）是指在系统中提供一个获取点，客户类仍然依赖服务类的接口。当客户类需要服务类时，从获取点主动取得指定的服务类，具体的服务类类型由获取点的配置决定。
+

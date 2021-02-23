@@ -1,0 +1,6 @@
+/Users/yue.wang/GameProgramming/IOCLearn/bin/Debug/IOCLearn.exe
+/Users/yue.wang/GameProgramming/IOCLearn/bin/Debug/IOCLearn.pdb
+/Users/yue.wang/GameProgramming/IOCLearn/obj/Debug/IOCLearn.csprojAssemblyReference.cache
+/Users/yue.wang/GameProgramming/IOCLearn/obj/Debug/IOCLearn.csproj.CoreCompileInputs.cache
+/Users/yue.wang/GameProgramming/IOCLearn/obj/Debug/IOCLearn.exe
+/Users/yue.wang/GameProgramming/IOCLearn/obj/Debug/IOCLearn.pdb
