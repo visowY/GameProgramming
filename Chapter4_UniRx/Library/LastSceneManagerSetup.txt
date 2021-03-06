@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/UniRxLearn/Chapter3/2.UIImprove/LoginScene.unity
+  isLoaded: 1
+  isActive: 1
