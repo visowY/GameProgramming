@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="289d4da7-6ffa-497b-a475-fbae310db0db" name="Default Changelist" comment="" />
+    <list default="true" id="289d4da7-6ffa-497b-a475-fbae310db0db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chapter4_UniRx/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chapter4_UniRx/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chapter4_UniRx/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chapter4_UniRx/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chapter4_UniRx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chapter4_UniRx/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/b10174-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/b10174-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/4855bc-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/4855bc-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1f/1f04b1d334edb43efb438927c053ceac" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1f/1f04b1d334edb43efb438927c053ceac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/UIImproveExam.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="225">
               <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
               <folding>
                 <marker date="1615033289968" expanded="false" signature="6:78" ph="..." />
@@ -38,16 +58,48 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginPanel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+            <state relative-caret-position="435">
+              <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
               <folding>
-                <marker date="1615034655731" expanded="true" signature="6:127" ph="..." />
-                <marker date="1615034655731" expanded="true" signature="167:775" ph="{...}" />
-                <marker date="1615034655731" expanded="true" signature="415:773" ph="{...}" />
-                <marker date="1615034655731" expanded="true" signature="485:612" ph="{...}" />
+                <marker date="1615190903478" expanded="true" signature="6:127" ph="..." />
+                <marker date="1615190903478" expanded="true" signature="167:1033" ph="{...}" />
+                <marker date="1615190903478" expanded="true" signature="465:1031" ph="{...}" />
+                <marker date="1615190903478" expanded="true" signature="535:662" ph="{...}" />
+                <marker date="1615190903478" expanded="true" signature="732:805" ph="{...}" />
+                <marker date="1615190903478" expanded="true" signature="878:958" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/RegisterPanel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <marker date="1615191274381" expanded="true" signature="6:127" ph="..." />
+                <marker date="1615191274381" expanded="true" signature="171:848" ph="{...}" />
+                <marker date="1615191274381" expanded="true" signature="464:846" ph="{...}" />
+                <marker date="1615191274381" expanded="true" signature="542:587" ph="{...}" />
+                <marker date="1615191274381" expanded="true" signature="663:708" ph="{...}" />
+                <marker date="1615191274381" expanded="true" signature="784:838" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/3.Trigger/TriggerExam.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <marker date="1615378660462" expanded="true" signature="6:78" ph="..." />
+                <marker date="1615378660462" expanded="true" signature="120:125" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -71,8 +123,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter1/2.Update/UniUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter1/Chapter1Start.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityTests/Rx/AggregateTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/RegisterPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter2/4.Select/SelectExam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/3.Trigger/TriggerExam.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -95,6 +149,8 @@
         <option value="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/1.Documents/Chapter3Documents.cs" />
         <option value="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/UIImproveExam.cs" />
         <option value="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/RegisterPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/3.Trigger/TriggerExam.cs" />
       </list>
     </option>
   </component>
@@ -107,8 +163,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
-    <option name="y" value="107" />
+    <option name="x" value="124" />
+    <option name="y" value="-755" />
     <option name="width" value="1233" />
     <option name="height" value="740" />
   </component>
@@ -118,12 +174,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
@@ -179,11 +235,14 @@
       <workItem from="1614324268628" duration="20000" />
       <workItem from="1614324476627" duration="7717000" />
       <workItem from="1615031559641" duration="3202000" />
+      <workItem from="1615190346506" duration="1523000" />
+      <workItem from="1615193599385" duration="253000" />
+      <workItem from="1615376837598" duration="685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10939000" />
+    <option name="totallyTimeSpent" value="13400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -195,10 +254,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="107" width="1233" height="740" extended-state="0" />
+    <frame x="124" y="-755" width="1233" height="740" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25776657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31654072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -402,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/UIImproveExam.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="225">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding>
             <marker date="1615033289968" expanded="false" signature="6:78" ph="..." />
@@ -416,13 +475,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/LoginPanel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+        <state relative-caret-position="435">
+          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
           <folding>
-            <marker date="1615034655731" expanded="true" signature="6:127" ph="..." />
-            <marker date="1615034655731" expanded="true" signature="167:775" ph="{...}" />
-            <marker date="1615034655731" expanded="true" signature="415:773" ph="{...}" />
-            <marker date="1615034655731" expanded="true" signature="485:612" ph="{...}" />
+            <marker date="1615190903478" expanded="true" signature="6:127" ph="..." />
+            <marker date="1615190903478" expanded="true" signature="167:1033" ph="{...}" />
+            <marker date="1615190903478" expanded="true" signature="465:1031" ph="{...}" />
+            <marker date="1615190903478" expanded="true" signature="535:662" ph="{...}" />
+            <marker date="1615190903478" expanded="true" signature="732:805" ph="{...}" />
+            <marker date="1615190903478" expanded="true" signature="878:958" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/2.UIImprove/RegisterPanel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <marker date="1615191274381" expanded="true" signature="6:127" ph="..." />
+            <marker date="1615191274381" expanded="true" signature="171:848" ph="{...}" />
+            <marker date="1615191274381" expanded="true" signature="464:846" ph="{...}" />
+            <marker date="1615191274381" expanded="true" signature="542:587" ph="{...}" />
+            <marker date="1615191274381" expanded="true" signature="663:708" ph="{...}" />
+            <marker date="1615191274381" expanded="true" signature="784:838" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UniRxLearn/Chapter3/3.Trigger/TriggerExam.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <marker date="1615378660462" expanded="true" signature="6:78" ph="..." />
+            <marker date="1615378660462" expanded="true" signature="120:125" ph="{...}" />
           </folding>
         </state>
       </provider>

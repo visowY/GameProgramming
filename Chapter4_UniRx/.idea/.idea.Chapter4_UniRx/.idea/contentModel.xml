@@ -380,7 +380,11 @@
             </e>
             <e p="2.UIImprove" t="Include">
               <e p="LoginPanel.cs" t="Include" />
+              <e p="RegisterPanel.cs" t="Include" />
               <e p="UIImproveExam.cs" t="Include" />
+            </e>
+            <e p="3.Trigger" t="Include">
+              <e p="TriggerExam.cs" t="Include" />
             </e>
           </e>
         </e>
